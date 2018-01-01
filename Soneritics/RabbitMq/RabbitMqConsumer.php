@@ -8,9 +8,9 @@ class RabbitMqConsumer extends RabbitMq
 {
     /**
      * @param string $consumerTag
-     * @param Closure $callback
+     * @param \Closure $callback
      */
-    public function subscribe(string $consumerTag, Closure $callback): void
+    public function subscribe(string $consumerTag, \Closure $callback): void
     {
         $this->channel->basic_consume($this->connectionParameters->getQueue(), $consumerTag, false, false, false, false, $callback);
     }
