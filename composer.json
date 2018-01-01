@@ -1,0 +1,20 @@
+{
+  "name": "soneritics/rabbitmq",
+  "type": "library",
+  "description": "RabbitMq OOP wrapper",
+  "homepage": "https://soneritics.nl/",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1.0",
+    "php-amqplib/php-amqplib": "2.7.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "dev-master",
+    "squizlabs/php_codesniffer": "dev-master",
+    "satooshi/php-coveralls": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {"RabbitMq\\": "Soneritics/RabbitMq/"}
+  }
+}
