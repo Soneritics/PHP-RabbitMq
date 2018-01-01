@@ -1,5 +1,5 @@
 <?php
-namespace Soneritics\RabbitMq;
+namespace RabbitMq;
 
 /**
  * Class RabbitMqConfig
